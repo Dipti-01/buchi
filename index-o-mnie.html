@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchi Photo-Strona główna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet" type="text/css"> 
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+    <link href="css/main-banner.css" rel="stylesheet" type="text/css">
+    <link href="css/container.css" rel="stylesheet" type="text/css">
+    <link href="css/about-us.css" rel="stylesheet" type="text/css">
+    <link href="css/main-navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/bookmark.css" rel="stylesheet" type="text/css">
+    <link href="css/gallery.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <nav class="main-navigation">
+        <div class="main-navigation__inner">
+            <div class="main-navigation__logo">
+                <a href="#" class="main-navigation__logo-link">
+                    <img src="images/logo.png" alt="Logo" class="main-navigation__logo-image">
+                    Buchi Foto
+                </a>
+            </div>
+            <ul class="main-navigation__menu">
+                <li class="main-navigation__menu-item">
+                    <a href="index.html" class="main-navigation__link">
+                        Strona Główna
+                    </a>
+                </li>
+                <li class="main-navigation__menu-item">
+                    <a href="galeria.html" class="main-navigation__link">
+                        Galeria
+                    </a>
+                </li>
+                <li class="main-navigation__menu-item">
+                    <a href="index-o-mnie.html" class="main-navigation__link">
+                        O mnie
+                    </a>
+                </li>
+            </ul>
+            <button class="main-navigation__mobile-button">
+                <img src="images/navigation.svg" alt="Otwórz / zamknij nawigacje" class="main-navigation__mobile-button-image">
+            </button>
+        </div>
+    </nav>
+    <script>
+        (() => {
+    const button = document.querySelector(".main-navigation__mobile-button");
+    const menu = document.querySelector(".main-navigation__menu")
+
+    const toggleClass = () => {
+        menu.classList.toggle("main-navigation__menu--open");
+    };
+
+    button.addEventListener("click", toggleClass);
+    menu.addEventListener("click", toggleClass);
+})();
+    </script>
+    <section class="main-banner" style="background-image: url('images/banner.jpg');">
+        <a href="#about-us" class="main-banner__button">
+            Informacje o mnie
+        </a>
+    </section>
+    <div class="container" id="about-us">
+        <section class="about-us">
+            <div class="about-us__text">
+                <h3 class="about-us__header">Informacje o mnie</h3>
+                <p class="about-us__paragraph">
+                    Cześć, jestem Patryk i mam 18 lat. Zajmuje się fotografią.   
+                </p>
+                <p class="about-us__paragraph">
+                    Aktualnie chodzę do klasy 3 technikum na kierunku Technik Fotografii i Multimediów.
+                </p>
+            </div>
+            <img class="about-us__image" src="images/third.png" alt="">
+        </section>
+    </div>
+        </body>
+    </html>
